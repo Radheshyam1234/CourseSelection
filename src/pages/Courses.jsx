@@ -34,10 +34,14 @@ export const Courses = () => {
       </div>
 
       <div className="courseCards">
-        {getFilteredCourseList(activeAgeGroup, courseList)?.map(
-          (course, index) => {
-            return <CourseCard course={course} key={index} />;
-          }
+        {courseList.length > 0 ? (
+          getFilteredCourseList(activeAgeGroup, courseList)?.map(
+            (course, index) => {
+              return <CourseCard course={course} key={index} />;
+            }
+          )
+        ) : (
+          <h3>Loading the courses</h3>
         )}
       </div>
     </>
