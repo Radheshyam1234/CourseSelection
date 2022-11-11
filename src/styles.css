@@ -1,0 +1,16 @@
+* {
+  font-family: Lato, sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --communication-lightColor: #edfcff;
+  --communication-darkColor: #3ebeff;
+  --visualArts-lightColor: #dcccff;
+  --visualArts-darkColor: #905cff;
+  --music-lightColor: #ffedc8;
+  --music-darkColor: #f9b215;
+}
+a {
+  color: inherit;
+}

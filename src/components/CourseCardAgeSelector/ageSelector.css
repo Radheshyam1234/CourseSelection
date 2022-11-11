@@ -1,0 +1,73 @@
+.courseCardAgeSelector-wrapper,
+.courseCardAgeSelector-button {
+  display: flex;
+  justify-content: center;
+}
+.courseCardAgeSelector-wrapper {
+  margin: 30px 0;
+}
+.courseCardAgeSelector-button {
+  /* color: rgb(249, 178, 21); */
+  width: 147px;
+  height: 100px;
+  border-radius: 8px;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.communication .courseCardAgeSelector-button {
+  background-color: var(--communication-lightColor);
+}
+
+.visual .courseCardAgeSelector-button {
+  background-color: var(--visualArts-lightColor);
+}
+.music .courseCardAgeSelector-button {
+  background-color: var(--music-lightColor);
+}
+.courseCardAgeSelector-button span {
+  /* color: #fff; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.communication .ageSelector-active {
+  background-color: var(--communication-darkColor);
+  color: #fff;
+}
+.visual .ageSelector-active {
+  background-color: var(--visualArts-darkColor);
+  color: #fff;
+}
+.music .ageSelector-active {
+  background-color: var(--music-darkColor);
+  color: #fff;
+}
+
+.music .ageSelector-active::after {
+  color: var(--music-darkColor);
+}
+
+.communication .ageSelector-active::after {
+  color: var(--communication-darkColor);
+}
+.visual .ageSelector-active::after {
+  color: var(--visualArts-darkColor);
+}
+.ageSelector-active::after {
+  color: var(--communication-darkColor);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 12px solid;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
